@@ -12,6 +12,18 @@
   transition-duration: 250ms;
   transition-property: var(--timing-function);
   padding: 40px 40px;
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__form {
   font-weight: 700;

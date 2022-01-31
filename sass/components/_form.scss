@@ -34,6 +34,15 @@
       color: var(--color-active);
     }
   }
+  @media screen and (max-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .form__icon {
@@ -76,6 +85,15 @@
   &:focus,
   &:active {
     border-color: var(--color-active);
+  }
+  @media screen and (max-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
   }
 }
 
