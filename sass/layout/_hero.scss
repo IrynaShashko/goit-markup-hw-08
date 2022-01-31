@@ -21,8 +21,14 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 480px) {
-    width: 100%;
+  @media screen and (max-width: 480px) {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
   }
 }
 .hero__btn {
@@ -36,10 +42,10 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--color-btn);
-  // width: 200px;
-  // height: 50px;
-  // left: 700px;
-  // top: 430px;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
   transition-duration: 250ms;
   transition-property: var(--timing-function);
   &:hover,

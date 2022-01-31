@@ -4,7 +4,7 @@
   padding-bottom: 94px;
   @media screen and (max-width: 480px) {
     padding: 60px 15px;
-    margin: -10px;
+    margin: -15px;
   }
 }
 
@@ -19,7 +19,17 @@
     margin-bottom: 30px;
   }
 }
-
+.business-card {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+}
 .business-card__item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -36,6 +46,10 @@
     .business-card & + & {
       margin-top: 30px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 

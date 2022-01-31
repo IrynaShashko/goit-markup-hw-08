@@ -7,6 +7,11 @@
 .cardset__list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .cardset__item {
@@ -20,11 +25,12 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  &:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
-  &:not(:nth-child(n + 7)) {
-    margin-bottom: 30px;
+  width: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 
