@@ -2,6 +2,10 @@
   background: var(--color-section);
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (max-width: 480px) {
+    padding: 60px 15px;
+    margin: -10px;
+  }
 }
 
 .team__title {
@@ -11,6 +15,9 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
 }
 
 .business-card__item {

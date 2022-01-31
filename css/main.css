@@ -556,7 +556,6 @@ body {
 
 @media screen and (max-width: 480px) {
   .thumb {
-    width: 450px;
     margin-bottom: 30px;
   }
 }
@@ -587,6 +586,12 @@ body {
   letter-spacing: 0.03em;
   font-weight: 400;
   color: var(--second-text-color);
+}
+
+@media screen and (max-width: 480px) {
+  .info__after-title {
+    margin-bottom: 30px;
+  }
 }
 
 .samples {
@@ -632,17 +637,17 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 480px) {
-  .samples__list {
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 .team {
   background: var(--color-section);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 480px) {
+  .team {
+    padding: 60px 15px;
+    margin: -10px;
+  }
 }
 
 .team__title {
@@ -652,6 +657,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .team__title {
+    margin-bottom: 30px;
+  }
 }
 
 .business-card__item {
@@ -712,15 +723,22 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 480px) {
+  .client__title {
+    margin-bottom: 30px;
+  }
+}
+
 .client__list {
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .client__list {
     display: flex;
     flex-wrap: wrap;
+    margin: -5px;
   }
 }
 
@@ -730,7 +748,8 @@ body {
 
 @media screen and (max-width: 480px) {
   .client__item {
-    flex-basis: 50%;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 
