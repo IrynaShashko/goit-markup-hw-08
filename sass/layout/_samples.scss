@@ -4,8 +4,7 @@
 
 .samples__title {
   font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
@@ -14,18 +13,17 @@
   margin-bottom: 50px;
 }
 
-.samples__list {
-  display: flex;
-}
-
-.samples__item {
-  .samples__list & + & {
-    margin-left: 30px;
-  }
-}
+// .samples__item {
+//   .samples__list & + & {
+//     margin-left: 30px;
+//   }
+// }
 
 .sample {
   position: relative;
+  @media screen and (max-width: 480px) {
+    width: 370px;
+  }
 }
 
 .sample__text {
@@ -44,4 +42,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.samples__list {
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -12,9 +12,6 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.business-card {
-  display: flex;
-}
 
 .business-card__item {
   background: #ffffff;
@@ -22,8 +19,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-  .business-card & + & {
-    margin-left: 30px;
+  // .business-card & + & {
+  //   margin-left: 30px;
+  // }
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    .business-card & + & {
+      margin-top: 30px;
+    }
   }
 }
 

@@ -12,17 +12,18 @@
 
 .hero__title {
   color: var(--color-btn);
-  max-width: 696px;
   text-align: center;
   font-size: 44px;
   line-height: 1.3;
   font-weight: 900;
-  font-style: normal;
   letter-spacing: 0.06em;
   background-color: transparent;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
 }
 .hero__btn {
   background: var(--color-active);
@@ -35,10 +36,10 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--color-btn);
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  // width: 200px;
+  // height: 50px;
+  // left: 700px;
+  // top: 430px;
   transition-duration: 250ms;
   transition-property: var(--timing-function);
   &:hover,
