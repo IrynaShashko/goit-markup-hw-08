@@ -20,7 +20,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 40px;
   transition-duration: 250ms;
@@ -33,15 +33,6 @@
     ~ .form__icon {
       color: var(--color-active);
     }
-  }
-  @media screen and (max-width: 480px) {
-    width: 370px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 370px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 448px;
   }
 }
 
@@ -73,7 +64,7 @@
   color: rgba(117, 117, 117, 0.5);
   align-items: flex-start;
   resize: none;
-  width: 448px;
+  width: 100%;
   height: 120px;
   transition-duration: 250ms;
   transition-property: var(--timing-function);
@@ -85,15 +76,6 @@
   &:focus,
   &:active {
     border-color: var(--color-active);
-  }
-  @media screen and (max-width: 480px) {
-    width: 370px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 370px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 448px;
   }
 }
 

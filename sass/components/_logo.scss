@@ -37,7 +37,7 @@
 
 .footer__logo {
   margin-bottom: 20px;
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     display: flex;
     justify-content: center;
     align-items: center;
