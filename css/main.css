@@ -51,6 +51,7 @@ body {
 }
 
 .container {
+  outline: 2px solid teal;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -245,6 +246,10 @@ body {
 
 .form .form__box + .form__box {
   margin-top: 10px;
+}
+
+.form {
+  margin: -15px;
 }
 
 .form__label {
@@ -1197,7 +1202,7 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .subscribe__form {
     flex-wrap: wrap;
     justify-content: center;
@@ -1228,7 +1233,6 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 16px;
-  margin-right: 12px;
   margin-bottom: 20px;
 }
 
