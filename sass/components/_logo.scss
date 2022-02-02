@@ -19,12 +19,6 @@
 
 .header__logo {
   margin-right: 93px;
-  @media screen and (min-width: 768px) {
-    margin-right: 88px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
-  }
 }
 
 .header__logo--color-black {
@@ -37,19 +31,11 @@
 
 .footer__logo {
   margin-bottom: 20px;
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media screen and (min-width: 1200px) {
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
   }
 }

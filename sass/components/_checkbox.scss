@@ -14,8 +14,8 @@
 
 .checkbox__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   display: flex;
@@ -23,13 +23,10 @@
   align-items: center;
   transition-duration: 250ms;
   transition-property: var(--timing-function);
-  @media screen and (max-width: 480px) {
-    font-size: 12px;
-    line-height: 1.16;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
-    line-height: 1.16;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 

@@ -1,28 +1,26 @@
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 90vw;
+  min-height: 90vw;
   background: var(--color-btn);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition-duration: 250ms;
   transition-property: var(--timing-function);
   padding: 40px 40px;
-  @media screen and (max-width: 480px) {
+
+  @media screen and (min-width: 480px) {
     width: 450px;
-    height: 609px;
+    min-height: 609px;
   }
-  @media screen and (min-width: 768px) {
-    width: 450px;
-    height: 609px;
-  }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
-    height: 581px;
+    min-height: 581px;
   }
 }
 .modal__form {
