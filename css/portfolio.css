@@ -60,19 +60,19 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -356,29 +356,44 @@ body {
   border-top: 1px solid #ececec;
 }
 
+@media screen and (min-width: 1200px) {
+  .cards {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.cardset__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
 @media screen and (min-width: 768px) {
   .cardset__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -30px;
   }
 }
 
 .cardset__item {
   background: var(--color-btn);
   border: 1px solid #eeeeee;
-  width: 100%;
+  width: 370px;
   transition-duration: 250ms;
   transition-property: var(--timing-function);
+  width: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
 }
 
 .cardset__item:hover, .cardset__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media screen and (max-width: 767px) {
-  .cardset__list .cardset__item + .cardset__item {
-    margin-top: 30px;
+@media screen and (min-width: 480px) {
+  .cardset__item {
+    width: calc((100% - 1 * 30px) / 1);
+    margin: 15px;
   }
 }
 
@@ -414,7 +429,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-btn);
   height: 100%;
-  width: 100%;
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
 }
