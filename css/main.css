@@ -25,6 +25,9 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -1234,6 +1237,7 @@ body {
 @media screen and (min-width: 1200px) {
   .subscribe__input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
