@@ -779,6 +779,7 @@ body {
 
 .samples__list {
   display: flex;
+  margin: -15px;
 }
 
 .samples__title {
