@@ -35,13 +35,13 @@
                     +38 096 111 11 11</a></li>
             </ul>
             <div>
-                <button type="button" class="mob-menu__open-btn">
+                <button type="button" class="mob-menu__open-btn" data-menu-open>
                     <svg class="" width="24" height="16">
                         <use href="./images/icons.svg#icon-menu_open"></use>
                     </svg>
                 </button>
-            <div class="mob-menu">
-                <button type="button" class="mob-menu__close-btn" >
+            <div class="mob-menu is-hidden" data-menu>
+                <button type="button" class="mob-menu__close-btn" data-menu-close>
                     <svg class="" width="19" height="19">
                         <use href="./images/icons.svg#icon-close_btn"></use>
                     </svg>
@@ -528,5 +528,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
