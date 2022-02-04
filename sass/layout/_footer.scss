@@ -7,13 +7,13 @@
 }
 
 .footer-container {
-  @media screen and (min-width: 1200px) {
+  @include desk {
     display: flex;
     align-items: baseline;
   }
 }
 .footer-box {
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -26,7 +26,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 165px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-right: 70px;
   }
 }
@@ -55,7 +55,7 @@
     align-items: center;
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     display: inline;
   }
 }
@@ -63,7 +63,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     justify-content: flex-start;
   }
 }
@@ -100,7 +100,7 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     justify-content: flex-start;
   }
@@ -155,7 +155,7 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     justify-content: flex-start;
   }
 }
@@ -191,10 +191,10 @@
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 16px;
   margin-bottom: 20px;
-  @media screen and (min-width: 480px) {
+  @include tel {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: 358px;
     margin-right: 12px;
   }

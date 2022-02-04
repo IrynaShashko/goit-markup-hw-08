@@ -24,7 +24,7 @@
   transition-duration: 250ms;
   transition-property: var(--timing-function);
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     font-size: 14px;
     line-height: 1.71;
   }

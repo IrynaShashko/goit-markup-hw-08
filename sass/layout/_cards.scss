@@ -1,7 +1,7 @@
 .cards {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -12,7 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     flex-wrap: wrap;
   }
@@ -35,11 +35,11 @@
     margin: 15px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }

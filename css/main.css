@@ -54,7 +54,6 @@ body {
 }
 
 .container {
-  outline: 2px solid teal;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -86,15 +85,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--color-active);
-}
-
-@media screen and (min-width: 480px) {
-  .logo {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -445,10 +435,18 @@ body {
   }
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link:active {
-  color: var(--color-active);
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav .link:hover,
+  .site-nav .link:focus,
+  .site-nav .link:active {
+    color: var(--color-active);
+  }
 }
 
 .site-list {
@@ -514,6 +512,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
   }
 }
 
@@ -609,15 +613,10 @@ body {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (max-width: 480px) {
-  .hero__title {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-  }
+  width: 360px;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -738,15 +737,10 @@ body {
   font-weight: 700;
   color: var(--main-text-color);
   margin-bottom: 10px;
-}
-
-@media screen and (max-width: 480px) {
-  .info__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .info__after-title {
@@ -756,16 +750,7 @@ body {
   letter-spacing: 0.03em;
   font-weight: 400;
   color: var(--second-text-color);
-}
-
-@media screen and (max-width: 480px) {
-  .info__after-title {
-    margin-bottom: 30px;
-  }
-}
-
-.samples {
-  padding-bottom: 94px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -853,7 +838,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .business-card {
     display: flex;
     flex-wrap: nowrap;

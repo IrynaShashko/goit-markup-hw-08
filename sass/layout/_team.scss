@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -16,21 +16,22 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-bottom: 50px;
   }
 }
 .business-card {
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      flex-wrap: nowrap;
-    }
+  }
+  @include desk {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
+
 .business-card__list {
   &:not-last-child() {
     margin-bottom: 30px;
@@ -44,12 +45,12 @@
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 480px) {
+  @include tel {
     width: 450px;
     justify-content: center;
     align-items: center;
   }
-  @media screen and (min-width: 768px) {
+  @include tab {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }

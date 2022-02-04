@@ -21,19 +21,18 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (max-width: 480px) {
+  width: 360px;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+
+  @include tab {
     width: 360px;
     font-size: 26px;
     line-height: 1.62;
     text-align: center;
   }
-  @media screen and (min-width: 768px) {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-  }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: 696px;
     color: var(--color-btn);
     text-align: center;
