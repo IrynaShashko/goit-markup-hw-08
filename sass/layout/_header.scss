@@ -1,7 +1,14 @@
+.header {
+  position: relative;
+}
+
 .header__container {
+  display: flex;
+  justify-content: baseline;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
   @include tel {
-    display: inline-flex;
     justify-content: center;
     align-items: center;
   }
