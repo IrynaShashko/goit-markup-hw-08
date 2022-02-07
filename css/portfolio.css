@@ -203,6 +203,11 @@ body {
   justify-content: space-between;
 }
 
+.mob-menu__open-btn {
+  transition-duration: 250ms;
+  transition-property: var(--timing-function);
+}
+
 @media screen and (max-width: 767px) {
   .mob-menu__open-btn {
     display: block;
@@ -229,6 +234,8 @@ body {
   background-color: transparent;
   border: none;
   margin-bottom: 8px;
+  transition-duration: 250ms;
+  transition-property: var(--timing-function);
 }
 
 .mob-menu__close-btn:hover,
@@ -243,6 +250,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition-duration: 250ms;
+  transition-property: var(--timing-function);
 }
 
 .mob-nav__link:hover,
@@ -330,6 +339,11 @@ body {
     padding-bottom: 0;
     display: flex;
   }
+}
+
+.site-nav {
+  transition-duration: 250ms;
+  transition-property: var(--timing-function);
 }
 
 @media screen and (max-width: 767px) {
