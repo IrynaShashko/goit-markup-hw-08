@@ -20,6 +20,8 @@
   }
 }
 .site-nav {
+  transition-duration: 250ms;
+  transition-property: var(--timing-function);
   @media screen and (max-width: 767px) {
     display: none;
   }

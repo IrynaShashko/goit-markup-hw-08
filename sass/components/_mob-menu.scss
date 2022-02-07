@@ -27,6 +27,8 @@
   @include tab {
     display: none;
   }
+  transition-duration: 250ms;
+  transition-property: var(--timing-function);
 }
 
 .mob-menu__open-btn:hover,
@@ -39,6 +41,8 @@
   background-color: transparent;
   border: none;
   margin-bottom: 8px;
+  transition-duration: 250ms;
+  transition-property: var(--timing-function);
 }
 .mob-menu__close-btn:hover,
 .mob-menu__close-btn:focus {
@@ -51,6 +55,8 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition-duration: 250ms;
+  transition-property: var(--timing-function);
 }
 .mob-nav__link:hover,
 .mob-nav__link:active {
