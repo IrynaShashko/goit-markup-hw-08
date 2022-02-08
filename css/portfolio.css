@@ -121,8 +121,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .filter {
-    padding-bottom: 40px;
     margin: -8px;
+    margin-bottom: 40px;
   }
 }
 
@@ -139,6 +139,12 @@ body {
   .filter__list {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter__list {
     margin-bottom: 50px;
   }
 }
@@ -469,6 +475,8 @@ body {
   .contacts__link {
     font-size: 12px;
     line-height: 1.16px;
+    display: flex;
+    align-items: center;
   }
 }
 

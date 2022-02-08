@@ -1,8 +1,9 @@
 .info {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  @media screen and (max-width: 480px) {
-    padding-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .info__list {
@@ -66,6 +67,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .info__after-title {
@@ -76,4 +80,7 @@
   font-weight: 400;
   color: var(--second-text-color);
   margin-bottom: 30px;
+}
+.info-last {
+  margin-bottom: 0;
 }

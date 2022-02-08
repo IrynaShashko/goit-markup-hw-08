@@ -703,6 +703,8 @@ body {
   .contacts__link {
     font-size: 12px;
     line-height: 1.16px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -737,8 +739,8 @@ body {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--footer-color);
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-bg-tel-1x.jpg);
@@ -767,6 +769,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-bg-desk-1x.jpg);
   }
 }
@@ -789,15 +793,6 @@ body {
   font-size: 26px;
   line-height: 1.62;
   text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .hero__title {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -841,13 +836,14 @@ body {
 }
 
 .info {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .info {
-    padding-top: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -915,6 +911,12 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .info__title {
+    justify-content: flex-start;
+  }
+}
+
 .info__after-title {
   font-weight: 400;
   font-size: 14px;
@@ -925,9 +927,19 @@ body {
   margin-bottom: 30px;
 }
 
+.info-last {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1199px) {
   .samples {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .samples {
+    padding-bottom: 94px;
   }
 }
 
@@ -989,8 +1001,8 @@ body {
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -998,6 +1010,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .team__title {
+    font-size: 36px;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
 }
@@ -1087,8 +1101,8 @@ body {
 .client__title {
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -1097,6 +1111,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .client__title {
+    font-size: 36px;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
 }

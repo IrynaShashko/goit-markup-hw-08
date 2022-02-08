@@ -120,6 +120,8 @@
   @include tab {
     font-size: 12px;
     line-height: 1.16px;
+    display: flex;
+    align-items: center;
   }
   @include desk {
     display: flex;
